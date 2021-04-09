@@ -28,6 +28,9 @@ public class TestFieldInit extends IntegrationTest {
 		public int n = 0;
 
 		public TestCls(int z) {
+			//TODO: Remove useless self-assignment
+			//FIXME: Change the code by using this.n=0
+
 			this.n = z;
 			this.n = 0;
 		}
