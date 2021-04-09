@@ -24,6 +24,8 @@ public class CommonBinaryParser extends ParserConstants {
 		long stylesStart = is.readInt32();
 
 		int[] stringsOffset = is.readInt32Array(stringCount);
+		//TODO: Variable is never used
+		//FIXME: Change the code by removing this initialization
 		int[] stylesOffset = is.readInt32Array(styleCount);
 
 		is.checkPos(start + stringsStart, "Expected strings start");
