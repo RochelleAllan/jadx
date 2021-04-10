@@ -429,11 +429,7 @@ public class Deobfuscator {
 					break outerLoop;
 				} else if (intfClsName.startsWith("android.content.")) {
 					// e.g. DialogInterface.OnClickListener
-
-					//TODO: String concatenation can be done better to increase performance
-					//FIXME: change result to concat:concat(intfClsName.substring(16));
-					result += intfClsName.substring(16);
-
+					result = result.concat(intfClsName.substring(16));
 					break outerLoop;
 				}
 			}
