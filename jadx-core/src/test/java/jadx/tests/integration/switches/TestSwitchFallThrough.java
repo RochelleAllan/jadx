@@ -17,9 +17,7 @@ public class TestSwitchFallThrough extends IntegrationTest {
 			switch (a) {
 				case 1:
 					i = 1000;
-					// fallthrough
-					//TODO: Case currently falls through to next case
-					//FIXME: Add a break after this case
+					break;
 				case 2:
 					r = i;
 					break;
