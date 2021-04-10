@@ -11,13 +11,6 @@ import static org.hamcrest.Matchers.containsString;
 public class TestEndlessLoop extends IntegrationTest {
 
 	public static class TestCls {
-		//TODO: test1() has a uesless comparison with itseld
-		//FIXME: Remove redundant test1()
-		void test1() {
-			while (this == this) {
-			}
-		}
-
 		void test2() {
 			do {
 			} while (this == this);
