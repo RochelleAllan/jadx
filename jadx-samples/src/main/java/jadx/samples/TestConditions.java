@@ -44,9 +44,7 @@ public class TestConditions extends AbstractTest {
 		if (a || b) {
 			throw new RuntimeException();
 		}
-		//TODO: Not assigning return from test1() anywhere
-		//FIXME: Change the code by storing the result from test1() in an int type variable
-		test1(0);
+		int result=test1(0);
 	}
 
 	public void test4(int num) {
