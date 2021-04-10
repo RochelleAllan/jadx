@@ -36,10 +36,7 @@ public class TestConditions15 extends IntegrationTest {
 					|| "18".equals(name)
 					|| "19".equals(name)
 					|| "20".equals(name)
-
-					//TODO: Remove repetitive conditions
-					//FIXME: Check equivalence for 22 and name and change it to once instead of twice
-					|| "22".equals(name)
+					|| "21".equals(name)
 					|| "22".equals(name)
 					|| "23".equals(name)
 					|| "24".equals(name)
