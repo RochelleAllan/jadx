@@ -159,9 +159,6 @@ public class TestCF extends AbstractTest {
 			a.length();
 		}
 		a = new String("22");
-		//TODO: returning the length of a therefore lower case not required
-		//FIXME: change code by removing toLowerCase()
-		a.toLowerCase();
 		return a.length();
 	}
 
