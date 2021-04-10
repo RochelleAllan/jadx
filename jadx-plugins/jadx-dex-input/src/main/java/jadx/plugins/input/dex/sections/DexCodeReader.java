@@ -123,9 +123,7 @@ public class DexCodeReader implements ICodeReader {
 			return -1;
 		}
 		int insnsCount = getInsnsCount();
-		//TODO: Take care of negative integers
-		//FIXME: change padding to = insnsCount % 2 != 0 ? 2 : 0;
-		int padding = insnsCount % 2 == 1 ? 2 : 0;
+		int padding = insnsCount % 2 != 0 ? 2 : 0;
 		return 4 * 4 + insnsCount * 2 + padding;
 	}
 
